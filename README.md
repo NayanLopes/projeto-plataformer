@@ -4,7 +4,7 @@ Este repositório contém o código-fonte de um jogo do gênero **plataforma**, 
 
 ## 🎮 Sobre o Jogo
 
-Neste jogo, o jogador deve explorar fases desafiadoras, desviar de obstáculos e inimigos, e alcançar o final de cada nível coletando itens e vencendo desafios. O foco está na jogabilidade fluida, ambientação envolvente e progressão divertida.
+Neste jogo, o jogador deve explorar fases desafiadoras, desviar de obstáculos, e alcançar o final de cada nível chegando na bandeira.
 
 ## 🧠 Objetivo Acadêmico
 
