@@ -8,6 +8,7 @@ public class SceneController : MonoBehaviour
 {
     #region Singleton
     private static SceneController _instance;
+    public GameObject buttonsPanel;
 
     public static SceneController Instance { get { return _instance; } }
 
@@ -45,12 +46,25 @@ public class SceneController : MonoBehaviour
 
     public void Quit()
     {
-        Application.Quit();
+        // Editor unity
+        UnityEditor.EditorApplication.isPlaying = false;
+        // Jogo compilado
+        // Application.Quit();
+    }
+
+    public void ShowButtons()
+    {
+        buttonsPanel.SetActive(true);
+    }
+
+    public void BackToMenu()
+    {
+        buttonsPanel.SetActive(false);
     }
 
     private void Update()
     {
-        if(Keyboard.current.escapeKey.wasPressedThisFrame)
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             HomePage();
         }
